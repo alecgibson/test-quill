@@ -54,7 +54,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .quill-editor {
-    background: pink;
-  }
 </style>

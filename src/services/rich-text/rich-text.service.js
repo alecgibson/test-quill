@@ -21,7 +21,7 @@ export default class RichText {
     });
   }
 
-  submitOp (op) {
+  submitOp(op) {
     return new Promise((resolve, reject) => {
       this.doc.submitOp(op, (error) => {
         if (error) {
@@ -31,6 +31,10 @@ export default class RichText {
         }
       })
     })
+  }
+
+  on(...args) {
+    this.doc.on(...args)
   }
 
   _create() {
